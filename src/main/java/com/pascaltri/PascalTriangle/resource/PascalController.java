@@ -1,6 +1,7 @@
 package com.pascaltri.PascalTriangle.resource;
 
 import com.pascaltri.PascalTriangle.wrapper.ResponseWrap;
+import io.swagger.annotations.Api;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
+@Api(value = "Pascal Resource")
 public class PascalController {
 
     @RequestMapping("/pascal")
